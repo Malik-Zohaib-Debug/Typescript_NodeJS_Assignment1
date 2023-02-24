@@ -7,12 +7,16 @@
 // • Write one version of this program that passes the if test and 
 //another that fails. (The version that fails will have no output.)
 
-let userInput:string = "red"; 
-let alien_color: string []
-alien_color =['green', 'yellow', 'red'];
+// passing version
+let alien_color:string = "green"; 
 
-for(var i=0; i<alien_color.length; i++){
-    if(alien_color[i] == userInput){
-        console.log("The player just earned 5 points");
-    }
+if (alien_color === 'green') {
+    console.log("You just earned 5 points");
+}
+
+// failing version
+let alien_color_2: string = "red";
+
+if (alien_color_2 === 'green') {
+    console.log("You just earned 5 points");
 }
